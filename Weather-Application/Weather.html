@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecasting Website</title>
+</head>
+<style> 
+    h1 {
+      color: rgb(0, 0, 0);
+    }
+    body {
+      background-image: url(bg.png);
+      background-color: white;
+      background-repeat: no-repeat;
+      background-size: cover;
+      font-family: Arial;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .container {
+      justify-content: center;
+      text-align: center;
+      padding: 10px;
+    }
+    #city {
+      padding: 10px;
+      font-size: 18px;
+      border: 2px solid black;
+      width: 300px;
+    }        
+    .button {
+      justify-content: center;
+      outline: none;
+      display: inline-flex;
+      font-size: 18px;
+    }
+    .weather-info {
+      margin-top: 20px;
+      font-size: 18px;
+      font-weight: bold;
+    }
+    .weather-info.error {
+      color: red;
+    }
+    .b{
+      color: white;
+    }
+</style>
+<body>
+    <div class="container">
+        <h1><u>Weather</u> <u>Forecast</u></h1>
+        <input type="text" id="city" placeholder="Enter the State name">
+        <button onclick="getWeather()" class="button"><b>Search</b></button>
+        <div id="weather-info" class="weather-info"></div>
+        <script src="weather.js"></script>
+    </div>
+</body>
+
+</html>
